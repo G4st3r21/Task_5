@@ -25,11 +25,11 @@ public class Main {
     private static void drawFigure(int s) {
         int maxNum = s / 2;
 
-        printFirstHalf(maxNum);
-        printLastHalf(maxNum);
+        drawFirstHalf(maxNum);
+        drawLastHalf(maxNum);
     }
 
-    private static void printFirstHalf(int maxNum) {
+    private static void drawFirstHalf(int maxNum) {
         for (int i = 0; i < maxNum; i++) {
             printSpace(maxNum - i);
             for (int j = 0; j < i + 1; j++) {
@@ -39,7 +39,7 @@ public class Main {
         }
     }
 
-    private static void printLastHalf(int maxNum) {
+    private static void drawLastHalf(int maxNum) {
         for (int i = maxNum - 1; i >= 0; i--) {
             printSpace(maxNum + 1);
             for (int j = i; j >= 0; j--) {
